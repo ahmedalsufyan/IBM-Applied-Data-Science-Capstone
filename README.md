@@ -1,25 +1,61 @@
-# IBM Data Science Capstone Project - SpaceX Falcon 9 Landing Prediction
+# IBM Data Science Capstone Project: SpaceX Falcon 9 Landing Prediction
 
-## Executive Summary
-This project aims to predict the success of SpaceX Falcon 9 first-stage landings to evaluate reusability and estimate launch costs. Using various data science techniques—including API data collection, web scraping, data wrangling, exploratory data analysis (EDA) via SQL and visualization tools, interactive mapping, dynamic dashboards, and machine learning algorithms—we developed models capable of predicting landing outcomes with high accuracy.
-
----
-
-## Project Architecture & Methodology
-1. **Data Collection**: 
-   - Retreived flight data via SpaceX REST API.
-   - Web scraped historical launch records from Wikipedia using `BeautifulSoup`.
-2. **Data Wrangling**: 
-   - Handled missing values, encoded categorical variables using One-Hot Encoding, and formatted binary target variables (`Class`).
-3. **Exploratory Data Analysis (EDA)**:
-   - Visualized payload mass, flight numbers, and launch site outcomes using `Matplotlib` & `Seaborn`.
-   - Executed SQL queries in `SQLite` to analyze payload totals, success rates, and launch site rankings.
-4. **Interactive Visual Analytics**:
-   - Built interactive Folium maps with marker clusters and distance proximity analysis.
-   - Developed an interactive dashboard using `Streamlit` / `Plotly` to filter launch metrics.
-5. **Predictive Analytics (Machine Learning)**:
-   - Trained and evaluated Logistic Regression, SVM, Decision Tree, and KNN classifiers using `GridSearchCV`.
+**Author:** Khalid Alsufyan  
+**Repository:** [IBM-Applied-Data-Science-Capstone](https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone)
 
 ---
 
-## Repository Structure
+## 📌 Executive Summary
+The primary objective of this capstone project is to predict the landing success of SpaceX Falcon 9 first-stage boosters. By accurately forecasting whether a booster will land successfully, we can estimate launch costs and evaluate commercial feasibility, as first-stage reusability significantly reduces spaceflight expenditure. 
+
+This project encompasses the full data science workflow:
+* **Data Collection** via SpaceX REST API and BeautifulSoup Web Scraping.
+* **Data Cleaning & Wrangling** using Pandas to handle missing values and feature encoding.
+* **Exploratory Data Analysis (EDA)** using SQL queries and visualizations (Seaborn/Matplotlib).
+* **Interactive Data Visualization** using Folium spatial mapping and Streamlit interactive web applications.
+* **Machine Learning Prediction** using Logistic Regression, Support Vector Machines (SVM), Decision Trees, and K-Nearest Neighbors (KNN), optimized via `GridSearchCV`.
+
+---
+
+## 🛠️ Project Structure & Notebooks
+
+| Module / Notebook | Description | GitHub Link |
+| :--- | :--- | :--- |
+| **1. Data Collection (API)** | Fetched flight launch metrics using SpaceX API endpoint. | [`1_Data_Collection_API.ipynb`](./1_Data_Collection_API.ipynb) |
+| **2. Data Collection (Scraping)** | Scraped historical launch data from Wikipedia using `BeautifulSoup`. | [`2_Data_Collection_WebScraping.ipynb`](./2_Data_Collection_WebScraping.ipynb) |
+| **3. Data Wrangling** | Performed data transformation, missing value imputation, and One-Hot Encoding. | [`3_Data_Wrangling.ipynb`](./3_Data_Wrangling.ipynb) |
+| **4. EDA with Visualizations** | Evaluated relationships between flight number, payload mass, launch sites, and orbit types. | [`4_EDA_Visualization.ipynb`](./4_EDA_Visualization.ipynb) |
+| **5. EDA with SQL** | Ran exploratory queries using SQLite to compute success rates and payload aggregates. | [`5_EDA_SQL.ipynb`](./5_EDA_SQL.ipynb) |
+| **6. Interactive Maps (Folium)** | Mapped launch site locations, outcome markers, and calculated proximity to landmarks. | [`6_Interactive_Visual_Analytics_Folium.ipynb`](./6_Interactive_Visual_Analytics_Folium.ipynb) |
+| **7. Machine Learning Models** | Built and evaluated classification algorithms with cross-validation. | [`7_Machine_Learning_Prediction.ipynb`](./7_Machine_Learning_Prediction.ipynb) |
+| **8. Interactive Dashboard** | Built a dynamic dashboard app using Streamlit and Plotly. | [`app.py`](./app.py) |
+
+---
+
+## 📊 Key Insights & Results
+
+* **Launch Site Success:** Specific launch sites like `KSC LC-39A` demonstrated significantly higher landing success rates compared to earlier flight test sites.
+* **Payload Impact:** Heavier payloads typically exhibit higher landing success rates, correlating with improved hardware reliability in later Falcon 9 block iterations.
+* **Model Performance:** 
+  * Classification models (Logistic Regression, Decision Tree, SVM, and KNN) were evaluated using `GridSearchCV`.
+  * **Decision Tree** and **Logistic Regression** achieved top-tier predictive performance with strong accuracy scores on the evaluation test set.
+
+---
+
+## 🚀 Interactive Web Dashboard
+
+The project includes an interactive web interface powered by **Streamlit** to visualize landing outcomes dynamically.
+
+### How to Run Locally:
+```bash
+# Clone the repository
+git clone [https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone.git](https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone.git)
+
+# Navigate to the repository
+cd IBM-Applied-Data-Science-Capstone
+
+# Install required dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit application
+streamlit run app.py
