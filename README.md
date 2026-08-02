@@ -29,7 +29,7 @@ This project encompasses the full data science workflow:
 | **5. EDA with SQL** | Ran exploratory queries using SQLite to compute success rates and payload aggregates. | [`5_EDA_SQL.ipynb`](./5_EDA_SQL.ipynb) |
 | **6. Interactive Maps (Folium)** | Mapped launch site locations, outcome markers, and calculated proximity to landmarks. | [`6_Interactive_Visual_Analytics_Folium.ipynb`](./6_Interactive_Visual_Analytics_Folium.ipynb) |
 | **7. Machine Learning Models** | Built and evaluated classification algorithms with cross-validation. | [`7_Machine_Learning_Prediction.ipynb`](./7_Machine_Learning_Prediction.ipynb) |
-| **8. Interactive Dashboard** | Dynamic Streamlit dashboard deployed via ngrok. | 🚀 [Live App Link](https://grinch-basics-unjustly.ngrok-free.dev/) \| [`app.py`](./app.py) |
+| **8. Interactive Dashboard** | Dynamic Streamlit dashboard deployed via ngrok. | 🚀 [Live App Link](https://grinch-basics-unjustly.ngrok-free.dev/) \| [`Dashboard.ipynb`](./app.py) |
 
 ---
 
