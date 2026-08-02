@@ -1,6 +1,6 @@
 # IBM Data Science Capstone Project: SpaceX Falcon 9 Landing Prediction
 
-**Author:** Khalid Alsufyan  
+**Author:** Ahmed Alsufyan  
 **Repository:** [IBM-Applied-Data-Science-Capstone](https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone)  
 **Live Interactive Dashboard:** [SpaceX Streamlit Web App](https://grinch-basics-unjustly.ngrok-free.dev/)
 
