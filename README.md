@@ -1,7 +1,8 @@
 # IBM Data Science Capstone Project: SpaceX Falcon 9 Landing Prediction
 
 **Author:** Khalid Alsufyan  
-**Repository:** [IBM-Applied-Data-Science-Capstone](https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone)
+**Repository:** [IBM-Applied-Data-Science-Capstone](https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone)  
+**Live Interactive Dashboard:** [SpaceX Streamlit Web App](https://grinch-basics-unjustly.ngrok-free.dev/)
 
 ---
 
@@ -19,7 +20,7 @@ This project encompasses the full data science workflow:
 
 ## 🛠️ Project Structure & Notebooks
 
-| Module / Notebook | Description | GitHub Link |
+| Module / Notebook | Description | Source / Live Link |
 | :--- | :--- | :--- |
 | **1. Data Collection (API)** | Fetched flight launch metrics using SpaceX API endpoint. | [`1_Data_Collection_API.ipynb`](./1_Data_Collection_API.ipynb) |
 | **2. Data Collection (Scraping)** | Scraped historical launch data from Wikipedia using `BeautifulSoup`. | [`2_Data_Collection_WebScraping.ipynb`](./2_Data_Collection_WebScraping.ipynb) |
@@ -28,7 +29,7 @@ This project encompasses the full data science workflow:
 | **5. EDA with SQL** | Ran exploratory queries using SQLite to compute success rates and payload aggregates. | [`5_EDA_SQL.ipynb`](./5_EDA_SQL.ipynb) |
 | **6. Interactive Maps (Folium)** | Mapped launch site locations, outcome markers, and calculated proximity to landmarks. | [`6_Interactive_Visual_Analytics_Folium.ipynb`](./6_Interactive_Visual_Analytics_Folium.ipynb) |
 | **7. Machine Learning Models** | Built and evaluated classification algorithms with cross-validation. | [`7_Machine_Learning_Prediction.ipynb`](./7_Machine_Learning_Prediction.ipynb) |
-| **8. Interactive Dashboard** | Built a dynamic dashboard app using Streamlit and Plotly. | [`app.py`](./app.py) |
+| **8. Interactive Dashboard** | Dynamic Streamlit dashboard deployed via ngrok. | 🚀 [Live App Link](https://grinch-basics-unjustly.ngrok-free.dev/) \| [`app.py`](./app.py) |
 
 ---
 
@@ -46,6 +47,8 @@ This project encompasses the full data science workflow:
 
 The project includes an interactive web interface powered by **Streamlit** to visualize landing outcomes dynamically.
 
+* **Live URL:** [https://grinch-basics-unjustly.ngrok-free.dev/](https://grinch-basics-unjustly.ngrok-free.dev/)
+
 ### How to Run Locally:
 ```bash
 # Clone the repository
@@ -53,9 +56,6 @@ git clone [https://github.com/ahmedalsufyan/IBM-Applied-Data-Science-Capstone.gi
 
 # Navigate to the repository
 cd IBM-Applied-Data-Science-Capstone
-
-# Install required dependencies
-pip install -r requirements.txt
 
 # Run the Streamlit application
 streamlit run app.py
